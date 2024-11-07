@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitLife | Book a Session</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gray-50 font-sans">
+  
+    <header class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white sticky top-0 shadow-lg z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+          <a href="index.html" class="text-3xl font-extrabold tracking-wider">FitLife</a>
+          <nav class="flex space-x-6 text-lg">
+            <a href="index.html" class="hover:text-indigo-200 transition duration-300">Home</a>
+            <a href="about.html" class="hover:text-indigo-200 transition duration-300">About</a>
+            <a href="memberships.html" class="hover:text-indigo-200 transition duration-300">Memberships</a>
+            <a href="bookings.html" class="hover:text-indigo-200 transition duration-300">Bookings</a>
+            <a href="blog.html" class="hover:text-indigo-200 transition duration-300">Blog</a>
+          </nav>
+        </div>
+      </header>  
+  
+  <!-- Booking Section -->
+  <section class="container mx-auto py-16 px-6">
+    <h2 class="text-4xl font-bold text-gray-800 text-center mb-8">Book Your Session</h2>
+    <p class="text-lg text-gray-600 text-center mb-12">Choose a program, select your preferred date and time, and book your session with ease.</p>
+
+    <div class="bg-white shadow-lg rounded-lg max-w-lg mx-auto p-8">
+      
+      <!-- Booking Form -->
+      <form action="#"  class="space-y-6">
+        
+        <!-- Program Selection -->
+        <div>
+          <label for="program" class="block text-lg font-medium text-gray-700">Select Program</label>
+          <select id="program" name="program" class="mt-2 w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+            <option>Personal Training</option>
+            <option>Group Class</option>
+            <option>Yoga</option>
+            <option>Nutrition Consultation</option>
+          </select>
+        </div>
+
+        <!-- Date Selection -->
+        <div>
+          <label for="date" class="block text-lg font-medium text-gray-700">Choose Date</label>
+          <input type="date" id="date" name="date" class="mt-2 w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500" required>
+        </div>
+
+        <!-- Time Selection -->
+        <div>
+          <label for="time" class="block text-lg font-medium text-gray-700">Select Time</label>
+          <input type="time" id="time" name="time" class="mt-2 w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500" required>
+        </div>
+        
+        <!-- Submit Button -->
+        <button type="submit" class="w-full bg-indigo-600 text-white font-semibold py-3 rounded-lg shadow-md hover:bg-indigo-500 transition duration-300">Book Now</button>
+      
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
